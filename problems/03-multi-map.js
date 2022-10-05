@@ -24,12 +24,13 @@ console.log(result3); // hi!!!!!
 function multiMap(val, n, cb) {
   // Your code here
   let newArray = [];
-  let sum = 0;
 
   for (let i = 0; i < n; i++) {
     val * n;
     newArray.push(cb(val));
   }
+
+  return newArray;
 }
 
 let result1 = multiMap(7, 2, function (n) {
